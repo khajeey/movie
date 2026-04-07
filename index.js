@@ -111,9 +111,8 @@ filterBtn.addEventListener("click", () => {
     if (score > 10) {
         alert("Score 10 dan katta bo‘lmaydi")
         return}
-    score = Math.floor(score)
 
     page = 1
-    getMovies(movieType, page, "", min, max)
+    getMovies(movieType, page, "", min, max, score)
 })
 
